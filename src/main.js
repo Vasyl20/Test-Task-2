@@ -3,12 +3,14 @@
 $(".js-range-slider").ionRangeSlider();
 let my_range = $(".js-range-slider").data("ionRangeSlider");
 var lpf = document.getElementById("lbOff_On");
+var indat = document.getElementById("id_in_table");
 lpf.append("Device is OFF");
 
 function toggleBilling() {
     if( $("input").is(':checked') )
     {
-        $('label[id*="lbOff_On"]').text(""); // очистка label
+        $('label[id*="lbOff_On"]').text("");
+        $('input[id*="id_in_table"]').val(50)// очистка label
         lpf.append("ON"); //  label => On
         my_range.update({
             max:100,
@@ -26,7 +28,7 @@ function toggleBilling() {
     }
     else{
         $('label[id*="lbOff_On"]').text("");
-        $('input[id*="id_in_table"]'.valueOf="0"); // очистка label
+        $('input[id*="id_in_table"]').val(0) // очистка label
         lpf.append("Device is OFF"); //  label => Off
         my_range.update({
             max:0,
