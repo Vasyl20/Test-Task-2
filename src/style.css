@@ -16,14 +16,41 @@ body {
 
 .navbar {
    width: 100%;
-   height: 100px;
-   background-color: #512DA8;
+   height: 70px;
+   background-color: #0288D1;
+}
+
+.navbar h3 {
+  color: aliceblue;
+  text-align: center;
+  width: 100%;
 }
 
 .fl-ol {
-  margin-top: 50px;
+  margin-top: 30px;
+  float: left;
+  width: 10%;
+  margin-left: 30%;
+
 }
 
+.bl-inf{
+  width: 100%;
+}
 .range-slider{
-  margin-top: 50px;
+  margin-top: 300px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.extra-controls {
+ float: left;
+  margin-top: 30px;
+  width: 10%;
+  margin-left: 4.6%;
+}
+
+.js-input{
+  text-align: center;
 }

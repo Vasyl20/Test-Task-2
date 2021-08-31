@@ -9,7 +9,7 @@ function toggleBilling() {
     if( $("input").is(':checked') )
     {
         $('label[id*="lbOff_On"]').text(""); // очистка label
-        lpf.append("On"); //  label => On
+        lpf.append("ON"); //  label => On
         my_range.update({
             max:100,
             from: 50,
@@ -27,7 +27,7 @@ function toggleBilling() {
     else{
         $('label[id*="lbOff_On"]').text("");
         $('input[id*="id_in_table"]'.valueOf="0"); // очистка label
-        lpf.append("Off"); //  label => Off
+        lpf.append("Device is OFF"); //  label => Off
         my_range.update({
             max:0,
             from: 0,
