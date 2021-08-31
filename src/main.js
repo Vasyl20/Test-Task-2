@@ -3,7 +3,7 @@
 $(".js-range-slider").ionRangeSlider();
 let my_range = $(".js-range-slider").data("ionRangeSlider");
 var lpf = document.getElementById("lbOff_On");
-lpf.append("Off");
+lpf.append("Device is OFF");
 
 function toggleBilling() {
     if( $("input").is(':checked') )
